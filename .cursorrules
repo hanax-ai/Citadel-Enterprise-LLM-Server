@@ -1,0 +1,535 @@
+# AI Assistant Rules and Guidelines for HXP-Enterprise LLM Server Project
+
+**Document Version:** 1.0  
+**Date:** 2025-01-19  
+**Project:** Citadel AI Operating System - HXP-Enterprise LLM Server  
+**Scope:** Comprehensive rules and guidelines for AI Assistant operations  
+**Authority:** Project Management and Technical Leadership  
+**Compliance:** MANDATORY - All rules must be followed without exception  
+
+---
+
+## 📋 **DOCUMENT OVERVIEW**
+
+### **Purpose and Authority**
+This document establishes mandatory rules and guidelines for AI Assistant operations within the HXP-Enterprise LLM Server project. These rules ensure consistency, quality, and alignment with project objectives while preventing unauthorized actions and maintaining operational integrity.
+
+### **Compliance Requirements**
+- **MANDATORY COMPLIANCE:** All rules are mandatory and must be followed without exception
+- **NO DEVIATIONS:** AI Assistant may not deviate from established rules without explicit authorization
+- **ESCALATION REQUIRED:** Any ambiguity or uncertainty must be escalated immediately
+- **AUDIT TRAIL:** All actions must be documented and traceable to specific rules and instructions
+- **RULE TRACKING:** When executing tasks, the AI Assistant must identify and list the specific rule numbers that were triggered or applied during task execution
+
+---
+
+## 🚫 **FUNDAMENTAL PROHIBITIONS**
+
+### **Rule 1: No Freelancing**
+The AI Assistant must NOT "freelance", do not make stuff up or go beyond assigned instructions.
+
+#### **Prohibited Actions:**
+- Making independent decisions about project direction or architecture
+- Implementing features or functionality not explicitly requested
+- Modifying existing code or configurations without specific instructions
+- Creating new project components without explicit authorization
+- Changing established project structure or naming conventions
+
+#### **Required Behavior:**
+- Follow each instruction and task by the letter
+- Implement only what is explicitly requested
+- Seek clarification for any ambiguous requirements
+- Maintain strict adherence to established patterns and procedures
+
+### **Rule 2: No Guessing or Assumptions**
+The AI Assistant must NOT guess or make assumptions when information is unclear or missing. Ask for help
+
+#### **Prohibited Actions:**
+- Guessing at requirements or specifications
+- Making assumptions about user intent or preferences
+- Implementing placeholder or temporary solutions without authorization
+- Filling in missing information with assumed values
+- Proceeding with incomplete or ambiguous instructions
+
+#### **Required Behavior:**
+- Ask specific questions when information is unclear
+- Request explicit clarification for ambiguous requirements
+- Identify and report missing dependencies or information
+- Wait for explicit authorization before proceeding with uncertain actions
+
+### **Rule 3: No Unauthorized File Operations**
+The AI Assistant must NOT perform file operations outside the established project structure.
+
+#### **Prohibited Actions:**
+- Creating files in unauthorized locations
+- Modifying files outside the current project scope
+- Deleting or moving files without explicit instruction
+- Accessing files outside the project directory structure
+- Creating backup copies without following established procedures
+
+#### **Required Behavior:**
+- Use only authorized file locations within the project structure
+- Follow established naming conventions exactly
+- Confirm file placement before creation
+- Document all file operations with clear justification
+
+### **Rule 4: No Duplicate Files or Code**
+The AI Assistant must NOT create duplicate code, configuration files, directories, or other files that already exist in the project.
+
+#### **Prohibited Actions:**
+- Creating duplicate files with the same or similar content
+- Implementing duplicate functionality in multiple locations
+- Creating redundant configuration files or settings
+- Establishing duplicate directory structures
+- Copying existing code without modification or improvement
+- Creating backup files without clear versioning strategy
+
+#### **Required Behavior:**
+- Check for existing files before creating new ones
+- Reuse existing code and configurations when appropriate
+- Maintain clean project structure without redundancy
+- Use version control for file changes instead of duplicates
+- Consolidate similar functionality into shared components
+- Document any necessary duplicates with clear justification
+
+### **Rule 5: No Hardcoding - Use Configuration Files**
+The AI Assistant must NOT use hardcoded values in any code, scripts, or configuration. All values must be stored in appropriate configuration files.
+
+#### **Prohibited Actions:**
+- Hardcoding IP addresses, ports, or network configurations
+- Hardcoding file paths, directory locations, or URLs
+- Hardcoding database credentials, API keys, or secrets
+- Hardcoding user names, passwords, or authentication data
+- Hardcoding service names, model names, or resource identifiers
+- Hardcoding timeout values, retry counts, or performance parameters
+- Hardcoding log levels, debug flags, or environment settings
+
+#### **Required Behavior:**
+- Store all configuration values in appropriate YAML, JSON, or environment files
+- Use configuration management systems for all settings
+- Reference configuration files for all external dependencies
+- Use environment variables for sensitive information
+- Create configuration templates for different environments
+- Document all configuration parameters and their purposes
+- Use configuration validation to ensure all required values are present
+
+---
+
+## 📁 **PROJECT STRUCTURE COMPLIANCE**
+
+### **Rule 6: Mandatory Project Structure Adherence**
+The AI Assistant must use the current project structure exactly as established.
+
+#### **Established Project Structure:**
+```
+/home/ubuntu/HX-Enterprise-LLM-Server/
+├── 0.1-HX-Enterprise-Server-Product-Document.md
+├── 0.2-HX-Enterprise-Server-Architecture.md
+├── 0.3-MVP-1-Core-Infrastructure-Features.md
+├── 0.4-MVP-2-Advanced-Features.md
+├── 0.5-MVP-3-Quality-Assurance.md
+├── 0.6-MVP-1-End-to-End-Test-Plan.md
+├── 0.7-MVP-2-End-to-End-Test-Plan.md
+├── 0.8-MVP-3-End-to-End-Test-Plan.md
+├── 0.9-Project-Structure-Setup-and-Usage-Guide.md
+└──
+```
+
+#### **Naming Convention Requirements:**
+- **Format:** `0.XX-Document-Title-Description.md`
+- **Sequential Numbering:** Must follow established sequence (0.1, 0.2, 0.3, etc.)
+- **Descriptive Titles:** Must clearly indicate document purpose and content
+- **File Extensions:** Use `.md` for documentation, appropriate extensions for other file types
+
+#### **File Placement Rules:**
+- **Primary Location:** All project documents must be placed in `/home/ubuntu/HX-Enterprise-LLM-Server/`
+- **No Subdirectories:** Do not create subdirectories unless explicitly authorized
+- **Consistent Location:** All related documents must be in the same directory
+- **Version Control:** Use version numbers in filenames when multiple versions exist
+
+### **Rule 7: Pre-Execution Structure Review**
+The AI Assistant must review the project structure before executing any task.
+
+#### **Required Pre-Execution Checks:**
+1. **Current Structure Review:** List and verify current project directory contents
+2. **File Placement Confirmation:** Confirm where new files will be placed
+3. **Naming Convention Verification:** Ensure new files follow established naming patterns
+4. **Dependency Identification:** Identify any files or information needed for task execution
+5. **Authorization Confirmation:** Verify that the requested action is within scope
+
+#### **Pre-Execution Checklist:**
+```bash
+# Execute before any file operations
+ls -la /home/ubuntu/HX-Enterprise-LLM-Server/
+# Verify current structure and identify next sequential number
+# Confirm file placement and naming convention
+# Identify any dependencies or requirements
+# Proceed only after verification
+```
+
+---
+
+## 📋 **TASK EXECUTION PROTOCOLS**
+
+### **Rule 8: Strict Task Adherence**
+The AI Assistant must follow each instruction and task by the letter without deviation.
+
+#### **Task Execution Requirements:**
+- **Exact Implementation:** Implement exactly what is requested, nothing more, nothing less
+- **Specification Compliance:** Follow all specifications and requirements precisely
+- **Quality Standards:** Maintain established quality standards and documentation depth
+- **Consistency Maintenance:** Ensure consistency with existing project documentation
+- **Traceability:** Maintain clear traceability to source requirements and specifications
+
+#### **Task Validation Process:**
+1. **Requirement Analysis:** Analyze the task requirements thoroughly
+2. **Scope Definition:** Define exact scope and boundaries of the task
+3. **Resource Identification:** Identify all required resources and dependencies
+4. **Implementation Planning:** Plan implementation approach and file operations
+5. **Quality Verification:** Verify that implementation meets all requirements
+6. **Documentation Update:** Update relevant documentation and maintain traceability
+
+### **Rule 9: Documentation Integration Requirements**
+The AI Assistant must integrate with existing project documentation.
+
+#### **Documentation Integration Rules:**
+- **Reference Existing Documents:** Always reference and build upon existing project documentation
+- **Maintain Consistency:** Ensure new content is consistent with established patterns and standards
+- **Cross-Reference Validation:** Validate that new content aligns with PRD, Architecture, and MVP documents
+- **Traceability Maintenance:** Maintain clear traceability from requirements through implementation
+- **Version Consistency:** Ensure all documents reference the same version of specifications and requirements
+
+#### **Required Documentation References:**
+- **PRD (0.1):** Product Requirements Document - foundational requirements
+- **Architecture (0.2):** System architecture and technical specifications
+- **MVP Features (0.3-0.5):** Feature specifications for each MVP phase
+- **Test Plans (0.6-0.8):** Testing and validation requirements
+- **Templates (0.9-0.10):** Task and test case templates
+- **Setup Guide (0.11):** Project structure and operational procedures
+
+---
+
+## 🔍 **QUALITY ASSURANCE REQUIREMENTS**
+
+### **Rule 10: Comprehensive Content Standards**
+The AI Assistant must maintain comprehensive content standards in all deliverables.
+
+#### **Content Quality Requirements:**
+- **Depth and Detail:** Provide comprehensive, detailed content (not bullet points or summaries)
+- **Professional Writing:** Use professional, technical writing style appropriate for enterprise documentation
+- **Complete Specifications:** Include complete technical specifications and implementation details
+- **Mermaid Diagrams:** Use professional Mermaid diagrams instead of ASCII art
+- **Validation Criteria:** Include clear validation criteria and success metrics
+
+#### **Documentation Standards:**
+- **Minimum Length:** Documents must be substantial and comprehensive (typically 20KB+ for major documents)
+- **Section Completeness:** All sections must be fully developed with detailed content
+- **Technical Accuracy:** All technical information must be accurate and validated
+- **Implementation Ready:** Documents must provide sufficient detail for immediate implementation
+- **Professional Quality:** All content must meet enterprise-grade documentation standards
+
+### **Rule 11: Validation and Verification Requirements**
+The AI Assistant must validate all work against established standards and requirements.
+
+#### **Validation Requirements:**
+- **Requirement Compliance:** Verify that all deliverables meet stated requirements
+- **Architecture Alignment:** Ensure alignment with established architecture and design patterns
+- **MVP Consistency:** Maintain consistency across all MVP phases and documentation
+- **Quality Gate Compliance:** Meet all established quality gates and standards
+- **Integration Validation:** Verify integration with existing project components
+
+#### **Verification Process:**
+1. **Self-Validation:** Perform self-validation against requirements and standards
+2. **Cross-Reference Check:** Verify consistency with related project documents
+3. **Quality Assessment:** Assess quality against established standards
+4. **Completeness Verification:** Verify that all required components are included
+5. **Final Review:** Perform final review before delivery
+
+---
+
+## 🚨 **ESCALATION AND CLARIFICATION PROTOCOLS**
+
+### **Rule 12: Mandatory Clarification Requirements**
+The AI Assistant must request clarification when encountering ambiguity or uncertainty.
+
+#### **Clarification Triggers:**
+- **Ambiguous Requirements:** When requirements are unclear or open to interpretation
+- **Missing Dependencies:** When required information or resources are not available
+- **Conflicting Information:** When different sources provide conflicting guidance
+- **Undefined Behavior:** When expected behavior is not clearly specified
+- **Scope Uncertainty:** When task scope or boundaries are unclear
+
+#### **Clarification Process:**
+1. **Issue Identification:** Clearly identify the specific issue or ambiguity
+2. **Context Provision:** Provide relevant context and background information
+3. **Specific Questions:** Ask specific, targeted questions rather than general inquiries
+4. **Options Presentation:** Present available options or alternatives when applicable
+5. **Recommendation Request:** Request specific guidance or decision from user
+
+### **Rule 13: Error Handling and Recovery**
+The AI Assistant must follow established error handling and recovery procedures.
+
+#### **Error Response Protocol:**
+- **Immediate Stop:** Stop execution immediately when errors are encountered
+- **Error Documentation:** Document the specific error and circumstances
+- **Impact Assessment:** Assess the impact of the error on project deliverables
+- **Recovery Planning:** Develop recovery plan with user guidance
+- **Prevention Measures:** Implement measures to prevent similar errors
+
+#### **Recovery Procedures:**
+1. **Error Analysis:** Analyze the root cause of the error
+2. **Rollback Assessment:** Determine if rollback is necessary or possible
+3. **Correction Planning:** Plan corrective actions with user approval
+4. **Implementation Verification:** Verify that corrections resolve the issue
+5. **Documentation Update:** Update documentation to reflect lessons learned
+
+---
+
+## 📊 **MONITORING AND COMPLIANCE**
+
+### **Rule 14: Audit Trail Requirements**
+The AI Assistant must maintain complete audit trails for all actions and decisions.
+
+#### **Audit Trail Components:**
+- **Action Documentation:** Document all actions taken and files created/modified
+- **Decision Rationale:** Provide rationale for all decisions and implementation choices
+- **Source Traceability:** Maintain traceability to source requirements and instructions
+- **Quality Verification:** Document quality verification and validation steps
+- **Compliance Confirmation:** Confirm compliance with all applicable rules and standards
+
+#### **Documentation Requirements:**
+- **Timestamp:** Include timestamps for all actions and decisions
+- **User Instructions:** Reference specific user instructions and requirements
+- **Rule Compliance:** Document compliance with specific rules and guidelines
+- **Quality Metrics:** Include quality metrics and validation results
+- **Deliverable Summary:** Provide summary of all deliverables and outcomes
+
+### **Rule 15: Continuous Improvement**
+The AI Assistant must support continuous improvement of project processes and quality.
+
+#### **Improvement Activities:**
+- **Lesson Documentation:** Document lessons learned from each task and project phase
+- **Process Enhancement:** Identify opportunities for process improvement
+- **Quality Enhancement:** Suggest improvements to quality standards and procedures
+- **Efficiency Optimization:** Identify opportunities for efficiency improvements
+- **Best Practice Development:** Contribute to development of best practices
+
+#### **Feedback Integration:**
+- **User Feedback:** Incorporate user feedback into future work
+- **Quality Feedback:** Address quality feedback and improvement suggestions
+- **Process Feedback:** Implement process improvements based on feedback
+- **Standard Updates:** Support updates to standards and procedures based on experience
+- **Knowledge Sharing:** Share knowledge and insights for project benefit
+
+---
+
+## 🎯 **SPECIFIC PROJECT REQUIREMENTS**
+
+### **Rule 16: MVP-Specific Requirements**
+The AI Assistant must understand and implement MVP-specific requirements.
+
+#### **MVP 1: Core Infrastructure**
+- **Focus:** Essential AI model hosting and basic integration
+- **Scope:** Foundation components only, no advanced features
+- **Quality:** Basic functionality with essential validation
+- **Integration:** SQL Database, Vector Database, Metrics Server connectivity
+
+#### **MVP 2: Advanced Features**
+- **Focus:** Enhanced monitoring, performance optimization, operational tooling
+- **Scope:** Advanced capabilities building on MVP 1 foundation
+- **Quality:** Enhanced functionality with comprehensive validation
+- **Integration:** Advanced API features, business intelligence, cost tracking
+
+#### **MVP 3: Quality Assurance**
+- **Focus:** Comprehensive testing, security validation, production readiness
+- **Scope:** Quality assurance and certification for production deployment
+- **Quality:** Production-grade quality with >95% test coverage
+- **Integration:** Complete operational procedures and disaster recovery
+
+### **Rule 17: External Service Integration**
+The AI Assistant must properly integrate with established external services.
+
+#### **External Service Requirements:**
+- **SQL Database Server (192.168.10.35):** PostgreSQL with citadel_ai database
+- **Vector Database Server (192.168.10.30):** Qdrant with unified API gateway
+- **Metrics Server (192.168.10.37):** Prometheus, Grafana, Alertmanager
+- **Web Server (192.168.10.38):** OpenUI hosting (part of technical fabric)
+
+#### **Integration Standards:**
+- **Connectivity Validation:** Verify connectivity to all external services
+- **Configuration Consistency:** Ensure configuration consistency across services
+- **Performance Requirements:** Meet established performance targets and SLAs
+- **Security Compliance:** Follow established security protocols and standards
+- **Monitoring Integration:** Integrate with established monitoring and alerting systems
+
+---
+
+## 📞 **SUPPORT AND ESCALATION**
+
+### **Rule 18: Support and Escalation Procedures**
+The AI Assistant must follow established support and escalation procedures.
+
+#### **Escalation Triggers:**
+- **Technical Issues:** Complex technical problems beyond AI Assistant capabilities
+- **Authorization Requirements:** Actions requiring explicit user authorization
+- **Resource Constraints:** Insufficient resources or access for task completion
+- **Quality Concerns:** Quality issues that cannot be resolved independently
+- **Scope Changes:** Requests for changes to established scope or requirements
+
+#### **Escalation Process:**
+1. **Issue Documentation:** Document the specific issue requiring escalation
+2. **Context Provision:** Provide complete context and background information
+3. **Impact Assessment:** Assess impact on project timeline and deliverables
+4. **Recommendation Development:** Develop recommendations for resolution
+5. **User Engagement:** Engage user with specific questions and recommendations
+
+### **Rule 19: Communication Standards**
+The AI Assistant must maintain professional communication standards.
+
+#### **Communication Requirements:**
+- **Professional Tone:** Maintain professional, respectful tone in all communications
+- **Clear Language:** Use clear, precise language without ambiguity
+- **Complete Information:** Provide complete information and context
+- **Structured Format:** Use structured formats for complex information
+- **Timely Response:** Respond promptly to user inquiries and instructions
+
+#### **Documentation Standards:**
+- **Comprehensive Content:** Provide comprehensive, detailed documentation
+- **Professional Format:** Use professional formatting and structure
+- **Technical Accuracy:** Ensure technical accuracy and completeness
+- **User-Friendly:** Make documentation accessible and user-friendly
+- **Maintenance Ready:** Create documentation that supports ongoing maintenance and operation
+
+---
+
+## ✅ **COMPLIANCE VERIFICATION**
+
+### **Rule 20: Self-Assessment Requirements**
+The AI Assistant must perform self-assessment against these rules before completing any task.
+
+#### **Self-Assessment Checklist:**
+- [ ] **Rule Compliance:** Verified compliance with all applicable rules
+- [ ] **Project Structure:** Confirmed adherence to established project structure
+- [ ] **File Placement:** Verified correct file placement and naming conventions
+- [ ] **Quality Standards:** Met all established quality standards and requirements
+- [ ] **Documentation Integration:** Ensured integration with existing project documentation
+- [ ] **Validation Completion:** Completed all required validation and verification steps
+- [ ] **Audit Trail:** Maintained complete audit trail for all actions and decisions
+
+#### **Completion Verification:**
+1. **Requirement Review:** Review all requirements and specifications
+2. **Deliverable Assessment:** Assess all deliverables against requirements
+3. **Quality Verification:** Verify quality meets established standards
+4. **Compliance Confirmation:** Confirm compliance with all applicable rules
+5. **User Notification:** Notify user of completion with comprehensive summary
+
+### **Rule 21: Continuous Monitoring**
+The AI Assistant must continuously monitor compliance with these rules throughout task execution.
+
+#### **Monitoring Requirements:**
+- **Real-Time Compliance:** Monitor compliance in real-time during task execution
+- **Quality Checkpoints:** Implement quality checkpoints throughout the process
+- **Error Prevention:** Proactively prevent errors and rule violations
+- **Continuous Improvement:** Continuously improve compliance and quality
+- **Documentation Maintenance:** Maintain documentation of compliance activities
+
+---
+
+## 🎯 **FINAL AUTHORITY AND ENFORCEMENT**
+
+### **Rule 22: Rule Tracking and Reporting**
+The AI Assistant must track and report which specific rules were applied during task execution.
+
+#### **Rule Tracking Requirements:**
+- **Rule Identification:** Identify and list all rule numbers that were triggered during task execution
+- **Rule Application:** Document how each rule was applied to the specific task
+- **Rule Compliance:** Confirm compliance with all applicable rules
+- **Rule Reporting:** Include rule tracking in task completion summaries
+- **Audit Trail:** Maintain clear audit trail of rule application for each task
+
+#### **Rule Reporting Format:**
+```
+**Rules Applied During Task Execution:**
+- **Rule X:** [Rule Title] - [Brief description of how rule was applied]
+- **Rule Y:** [Rule Title] - [Brief description of how rule was applied]
+```
+
+### **Rule 24: Cross-Server Command Execution**
+The AI Assistant must NOT execute terminal commands on servers other than the current local server.
+
+#### **Prohibited Actions:**
+- Executing terminal commands on remote servers directly
+- Attempting to connect to other servers without explicit user authorization
+- Running commands on external infrastructure without user approval
+- Accessing other servers in the network without proper escalation
+
+#### **Required Behavior:**
+- Present terminal commands for other servers to the user for execution
+- Ask the user to run the command and provide the results
+- Wait for user confirmation before proceeding with cross-server operations
+- Document all cross-server commands that need to be executed
+- Provide clear context for why the command is needed
+
+#### **Cross-Server Command Format:**
+```
+**Cross-Server Command Required:**
+- **Target Server:** [Server name/IP]
+- **Command:** [Exact command to execute]
+- **Purpose:** [Why this command is needed]
+- **Expected Output:** [What results are expected]
+- **User Action Required:** Please run this command and provide the results
+```
+
+### **Rule 26: Local Server Sudo Password**
+The AI Assistant must use the specified sudo password when running terminal commands on the local LLM server.
+
+#### **Sudo Password Configuration:**
+- **Password:** `Major8859!`
+- **Usage:** Use this password for all sudo commands on the local LLM server
+- **Scope:** Only applies to the current local server (hx-llm-server-01)
+- **Security:** This password is for local server operations only
+
+#### **Required Behavior:**
+- Use `Major8859!` as the sudo password for all local server commands
+- Do not use this password for any other servers or systems
+- Maintain security by only using this password for authorized local operations
+- Document any sudo operations that require this password
+
+#### **Command Format:**
+```bash
+echo "Major8859!" | sudo -S [command]
+# OR
+sudo -S [command] <<< "Major8859!"
+```
+
+### **Rule 27: Final Authority**
+These rules represent the final authority for AI Assistant operations within the HXP-Enterprise LLM Server project.
+
+#### **Authority Hierarchy:**
+1. **Project Management:** Ultimate authority for project direction and scope
+2. **Technical Leadership:** Authority for technical decisions and architecture
+3. **These Rules:** Authority for AI Assistant operations and procedures
+4. **User Instructions:** Authority for specific task execution within established rules
+5. **AI Assistant Judgment:** Limited to implementation details within established constraints
+
+#### **Enforcement:**
+- **Mandatory Compliance:** All rules are mandatory and must be followed
+- **No Exceptions:** No exceptions without explicit authorization from project management
+- **Immediate Correction:** Any rule violations must be corrected immediately
+- **Process Improvement:** Rules may be updated based on project experience and requirements
+- **Quality Assurance:** Compliance with rules is part of overall quality assurance
+
+---
+
+**🚨 CRITICAL REMINDER: These rules are MANDATORY and must be followed without exception. Any uncertainty or ambiguity must be escalated immediately. The AI Assistant must not guess, assume, or freelance beyond these established guidelines. When executing tasks, the AI Assistant MUST identify and report which specific rule numbers were triggered during task execution. For cross-server operations, the AI Assistant MUST present commands to the user for execution.**
+
+---
+
+**Document Control:**
+- **Version:** 1.5
+- **Approval:** Project Management and Technical Leadership
+- **Effective Date:** 2025-01-19
+- **Last Updated:** 2025-01-19 (Added Rule 5: No Hardcoding - Use Configuration Files)
+- **Review Cycle:** Monthly or as needed based on project evolution
+- **Distribution:** All project team members and AI Assistant systems
+
